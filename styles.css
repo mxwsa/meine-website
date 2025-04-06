@@ -1,54 +1,111 @@
-/* Allgemeine Formatierungen */
+/* Resetting some default styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body and background styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
     color: #333;
+    line-height: 1.6;
 }
 
-nav {
-    background-color: #333;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.navbar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.navbar li {
-    display: inline;
-    margin: 0 20px;
-}
-
-.navbar a {
+/* Navbar Styling */
+.navbar {
+    background-color: #2c3e50;
     color: white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo h1 {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ecf0f1;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links li a {
+    color: #ecf0f1;
     text-decoration: none;
     font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-.navbar a:hover {
-    text-decoration: underline;
+.nav-links li a:hover {
+    color: #3498db;
 }
 
-/* Abschnitts-Stile */
+/* Section styling */
 section {
-    padding: 50px;
+    padding: 50px 20px;
     text-align: center;
-}
+    background-color: #ecf
 
-section h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
+Um das Design optisch ansprechender und moderner zu gestalten, können wir einige zusätzliche Designelemente hinzufügen, wie weiche Farben, abgerundete Ecken, animierte Hover-Effekte und eine schönere Schriftart. Ich werde auch ein wenig mehr Abstand hinzufügen und die Farbpalette auf ein schönes Blau, Grau und Weiß anpassen, um es elegant und minimalistisch zu halten.
 
-section p {
-    font-size: 18px;
-    color: #666;
-}
+Hier ist eine überarbeitete Version mit einem schöneren und eleganteren Design:
+
+### HTML-Code (index.html):
+
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hauptmenü</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Meine Website</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ueber-mich">Über mich</a></li>
+            <li><a href="#einstellungen">Einstellungen</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <section id="home">
+        <div class="section-content">
+            <h2>Willkommen auf meiner Website!</h2>
+            <p>Dies ist die Startseite. Entdecke mehr über mich und meine Einstellungen.</p>
+        </div>
+    </section>
+
+    <section id="ueber-mich">
+        <div class="section-content">
+            <h2>Über mich</h2>
+            <p>Hier kannst du etwas mehr über mich erfahren. Ich bin ein leidenschaftlicher Entwickler und Designer!</p>
+        </div>
+    </section>
+
+    <section id="einstellungen">
+        <div class="section-content">
+            <h2>Einstellungen</h2>
+            <p>Hier kannst du deine bevorzugten Einstellungen festlegen.</p>
+        </div>
+    </section>
+</body>
+</html>
