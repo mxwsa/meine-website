@@ -24,23 +24,3 @@ nav ul {
     list-style: none;
     padding: 0;
 }
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px 20px;
-    background-color: #444;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-/* Hover-Effekt für Links */
-nav ul li a:hover {
-    background-color: #666;
-}
