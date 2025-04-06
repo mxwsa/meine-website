@@ -1,26 +1,48 @@
-/* Grundstil für die ganze Seite */
+/* Grundlegendes Styling für das Menü */
 body {
-    font-family: Comic, sans-serif;
+    font-family: Arial, sans-serif; /* Schriftart */
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #f4f4f4; /* Hintergrundfarbe der Seite */
 }
 
-/* Stil für das Menü */
+nav {
+    background-color: #333; /* Dunkler Hintergrund für das Menü */
+    padding: 10px 0;
+}
+
 .menu {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-h1 {
+    list-style-type: none; /* Entfernt die Standard-Aufzählungspunkte */
+    text-align: center; /* Zentriert die Menüelemente */
     margin: 0;
-    font-size: 36px;
+    padding: 0;
 }
 
-/* Navigation */
-nav ul {
-    list-style: none;
-    padding: 0;
+.menu li {
+    display: inline-block; /* Listenelemente nebeneinander anzeigen */
+}
+
+.menu li a {
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    color: white; /* Textfarbe */
+    padding: 15px 20px; /* Innenabstände der Links */
+    display: inline-block;
+    transition: background-color 0.3s ease; /* Sanfter Übergang bei Hover */
+}
+
+.menu li a:hover {
+    background-color: #575757; /* Ändert die Hintergrundfarbe bei Hover */
+}
+
+/* Responsive Design: Das Menü wird unter einer Breite von 600px vertikal */
+@media screen and (max-width: 600px) {
+    .menu li {
+        display: block; /* Listenelemente untereinander */
+        width: 100%; /* Jedes Element nimmt die ganze Breite ein */
+    }
+
+    .menu li a {
+        padding: 10px; /* Weniger Abstand bei mobilen Geräten */
+        text-align: center; /* Links werden in der Mitte angezeigt */
+    }
 }
